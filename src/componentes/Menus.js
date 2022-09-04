@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     menusView: {
         flexDirection: "row",
         justifyContent: "space-between"
-    },
+    }, 
     menusImg: {
         width: 70,
         height: 20,

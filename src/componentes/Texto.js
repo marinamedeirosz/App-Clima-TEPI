@@ -9,7 +9,7 @@ export default function Texto(props) {
   fonte=parseInt(props.fonte)
   return (
     <View style={styles.textoView}>
-      <Text style={[styles.textoStyle, {color: cor, fontSize: fonte}]}>{props.texto}</Text>
+      <Text style={{color: cor, fontSize: fonte}}>{props.texto}</Text>
     </View>
   );
 }
@@ -17,8 +17,5 @@ export default function Texto(props) {
 const styles = StyleSheet.create({
   textoView: {
     alignItems: "center"
-  },
-  textoStyle: {
-    marginBottom: 10
   },
 });

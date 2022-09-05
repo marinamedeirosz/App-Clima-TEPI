@@ -1,13 +1,10 @@
-import Menus from './src/componentes/Menus';
-import Local from './src/componentes/Local';
-import Clima from './src/telas/Clima';
+import Visor from './src/telas/Visor';
+import Visor2 from "./src/telas/Visor2"
 
 export default function App() {
   return (
     <>
-      <Menus></Menus>
-      <Local texto="Bandung, Indonesia"></Local>
-      <Clima></Clima>
+      <Visor2></Visor2>
     </>
   );
 } 

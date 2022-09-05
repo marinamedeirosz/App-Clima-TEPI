@@ -2,13 +2,15 @@ import { StyleSheet, View, Image, Dimensions } from "react-native";
 import Texto from "./Texto";
 
 let cor;
+let img
 
 export default function Detalhes(props) {
     cor=props.cor
+    img=props.img
 
     return (
         <View style={styles.detalhesView}>
-            <Image style={styles.detalhesImg} source={require(props.img)} />
+            <Image style={styles.detalhesImg} source={require(img)} />
             <View style={styles.detalhesView2}>    
                 <Texto style={styles.detalhesText} texto={props.texto} cor="#7EB1FF"></Texto>
                 <Texto style={styles.detalhesText} texto={props.texto2} cor="#FEFFFF"></Texto>
